@@ -1,6 +1,11 @@
 # Compiled class file
 *.class
 
+#Maven and vscode files and folders
+.mvn
+target/ 
+.vscode
+
 # Log file
 *.log
 
