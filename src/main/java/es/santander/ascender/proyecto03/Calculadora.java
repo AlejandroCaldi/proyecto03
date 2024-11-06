@@ -44,7 +44,7 @@ public class Calculadora {
 
         }
 
-        return ultimoValor;
+        return ultimoValor; // a los efectos de test
 
     }
 
