@@ -1,46 +1,42 @@
 package es.santander.ascender.proyecto03;
 
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.Test;
 
 
 public class CalculadoraTest {
+
+    private final Calculadora cut = new Calculadora();
+
     @Test
     public void testSumar() {
-        Calculadora cut = new Calculadora();
-
+        long esperado = 35;
         long prueba = cut.sumar(15,20);
-        
-        assertTrue(prueba==35);
+        assertEquals(esperado,prueba,"Debe dar " + esperado + "5 pero da " + prueba);
     } 
 
     @Test
     public void testRestar() {
-        Calculadora cut = new Calculadora();
-
+        long esperado = -5;
         long prueba = cut.restar(15,20);
-        
-        assertTrue(prueba==-5);
+        assertEquals(esperado,prueba,"Debe dar " + esperado + " pero da " + prueba);
     } 
      
 
     @Test
     public void testMultiplicar() {
-        Calculadora cut = new Calculadora();
-
+        long esperado = 300;
         long prueba = cut.multiplicar(15,20);
-        
-        assertTrue(prueba==300);
+        assertEquals(esperado,prueba,"Debe dar " + esperado + "pero da " + prueba);
     } 
      
     @Test
     public void testDividir() {
-        Calculadora cut = new Calculadora();
-
+        double esperado = 0.75;
         double prueba = cut.dividir(15,20);
-        System.out.println(prueba);
-        assertTrue(prueba==0.75);
+        assertEquals(esperado,prueba,"Debe dar " + esperado + "pero da " + prueba);
     } 
 
 }
