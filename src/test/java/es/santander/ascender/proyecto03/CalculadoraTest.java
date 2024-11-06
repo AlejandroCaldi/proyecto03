@@ -39,4 +39,10 @@ public class CalculadoraTest {
         assertEquals(esperado,prueba,"Debe dar " + esperado + "pero da " + prueba);
     } 
 
+    @Test
+    public void testDividirCero() {
+        double esperado = 0;
+        double prueba = cut.dividir(15,0);
+        assertEquals(esperado,prueba,"Debe dar " + esperado + "pero da " + prueba);
+    } 
 }
