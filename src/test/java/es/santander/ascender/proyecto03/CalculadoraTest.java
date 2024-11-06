@@ -60,4 +60,19 @@ public class CalculadoraTest {
         assertEquals(esperado, prueba, "Debe dar " + esperado + "pero da " + prueba);
 
     }
+
+    @Test
+    public void testCalcularTablaMultiplicar() {
+        int[] esperado ={0,8,16,24,32,40,48,56,64,72,80};
+        int numero = 8; 
+        int limite = 10;
+        int[] prueba = cut.calcularTablaMultiplicar(numero,limite);
+        for (int i = 0; i<=limite;i++){
+
+            assertEquals(prueba[i], esperado[i], "En el índice " + i + " del array no coinciden los valores");
+
+        }
+        
+
+    }
 }

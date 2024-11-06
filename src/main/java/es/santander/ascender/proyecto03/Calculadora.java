@@ -45,6 +45,22 @@ public class Calculadora {
         }
 
         return ultimoValor;
+
+    }
+
+    public int[] calcularTablaMultiplicar(int numero, int limite) {
+
+        int[] resultados = new int[limite+1];
+
+        for (int i = 0; i <= limite; i++) {
+
+            int ultimoValor = numero*i;
+            System.out.println(numero + " x " + i + " = " + ultimoValor);
+            resultados[i] = ultimoValor;
+
+        }
+
+        return resultados;
     }
 
 }
