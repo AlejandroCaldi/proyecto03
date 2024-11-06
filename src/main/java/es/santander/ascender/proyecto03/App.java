@@ -9,5 +9,6 @@ public class App {
         Calculadora calc = new Calculadora();
         double resultado = calc.dividir(15, 20);
         System.out.println(resultado);
+        calc.presentarTablaMultiplicar(8,20);
     }
 }

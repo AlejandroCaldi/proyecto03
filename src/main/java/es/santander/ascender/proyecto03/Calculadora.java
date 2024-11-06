@@ -17,13 +17,34 @@ public class Calculadora {
     }
 
     public double dividir(long dividendo, long divisor) {
-        
+
         if (divisor != 0) {
-        
+
             return (double) dividendo / divisor;
         }
-        
+
         return 0d;
+
+        // try {
+        // return (double) dividendo / divisor;
+        // } catch (Exception e) {
+        // System.out.println("Error . No se puede dividir por cero.");
+        // }
+
+    }
+
+    public int presentarTablaMultiplicar(int numero, int limite) {
+
+        int ultimoValor = 0;
+
+        for (int i = 0; i <= limite; i++) {
+
+            ultimoValor = numero*i;
+            System.out.println(numero + " x " + i + " = " + ultimoValor);
+
+        }
+
+        return ultimoValor;
     }
 
 }
