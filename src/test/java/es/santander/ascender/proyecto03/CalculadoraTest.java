@@ -14,7 +14,7 @@ public class CalculadoraTest {
     public void testSumar() {
         long esperado = 35;
         long prueba = cut.sumar(15,20);
-        assertEquals(esperado,prueba,"Debe dar " + esperado + "5 pero da " + prueba);
+        assertEquals(esperado,prueba,"Debe dar " + esperado + " pero da " + prueba);
     } 
 
     @Test
